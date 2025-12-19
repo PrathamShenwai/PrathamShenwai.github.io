@@ -2694,3 +2694,107 @@ footer .copyright span:last-child::after {
   ...
 </div>
 */
+/* =====================================================================
+   MOBILE RESPONSIVE ADJUSTMENTS - ADD AT END OF main.css
+   ===================================================================== */
+
+/* Mobile-first: reduce font size for smaller screens */
+@media only screen and (max-width: 768px) {
+  p.lead {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  p.lead2 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Extra small screens (phones under 480px) */
+@media only screen and (max-width: 480px) {
+  p.lead {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+  }
+
+  p.lead2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Reduce padding on col-twelve for mobile */
+  .col-twelve {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Profile image responsive sizing */
+@media only screen and (max-width: 768px) {
+  .about-photo {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-photo {
+    max-width: 120px;
+  }
+}
+
+/* Social links responsive */
+@media only screen and (max-width: 768px) {
+  .about-social {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-social a {
+    margin: 0.3rem 0;
+  }
+}
+
+/* News section text alignment for mobile */
+@media only screen and (max-width: 768px) {
+  .news-date {
+    display: inline;
+    font-weight: bold;
+  }
+
+  .news-line {
+    display: block;
+    word-wrap: break-word;
+  }
+}
+
+/* Section intro padding adjustments */
+@media only screen and (max-width: 768px) {
+  .section-intro {
+    padding: 4rem 0 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-intro {
+    padding: 2.5rem 0 !important;
+  }
+}
